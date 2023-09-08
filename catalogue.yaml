@@ -56,6 +56,11 @@
       args:
         chdir: /app
 
+    - name: copy the service file into yaml file
+    ansible.builtin.copy:
+      src: catalogue.services
+      dest: /etc/systemd/system/catalogue.service
+
 
 
     
