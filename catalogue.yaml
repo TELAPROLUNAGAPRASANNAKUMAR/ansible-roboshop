@@ -23,4 +23,9 @@
     - name : create user
       ansible.builtin.user:
         name: roboshop
+
+    - name: check directory exit or not
+      ansible..builtin.stat:
+      path: /app
+      register: directory
     
