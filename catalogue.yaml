@@ -29,6 +29,10 @@
         path: /app
       register: directory
 
+    - name: display directory
+      ansible.builtin.debug:
+        msg: "output is {{directory}}"
+
     
 
 
