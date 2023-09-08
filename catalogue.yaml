@@ -26,8 +26,8 @@
 
     - name: check directory exit or not
       ansible.builtin.stat:
-      path: /app
-      register: directory
+        path: /app
+        register: directory
 
     - name: display directory
       ansible.builtin.debug:
