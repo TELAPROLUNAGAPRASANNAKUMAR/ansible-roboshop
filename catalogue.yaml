@@ -9,3 +9,8 @@
       ansible.builtin.yum:
         name: nodejs
         state: installed
+
+    - name: create user check user is exit or not
+      ansible.builtin.command: id roboshop
+      register: output
+      ignore_errors: True   
