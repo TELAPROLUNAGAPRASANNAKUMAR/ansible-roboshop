@@ -25,7 +25,7 @@
         name: roboshop
 
     - name: check directory exit or not
-      ansible..builtin.stat:
+      ansible.builtin.stat:
       path: /app
       register: directory
 
