@@ -58,7 +58,7 @@
 
     - name: copy the service file into yaml file
       ansible.builtin.copy:
-        src: catalogue.services
+        src: catalogue.service
         dest: /etc/systemd/system/catalogue.service
 
 
