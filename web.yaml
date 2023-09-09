@@ -6,12 +6,11 @@
     ansible.builtin.yum:
       name: nginx
       state: installed
-
-  - name: start and enable service
+  - name: start and enable nginx
     ansible.builtin.service:
       name: nginx
       state: started
-      enabled: true
+      enabled: yes
 
   - name: remove html file
     ansible.builtin.file:
