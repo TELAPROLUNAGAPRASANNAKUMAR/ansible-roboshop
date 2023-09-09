@@ -4,3 +4,7 @@ mongodb.joindevops.art
 catalogue.joindevops.art
 [web]
 web.joindevops.art
+[redis]
+redis.joindevops.art
+[cart]
+cart.joindevops.art
