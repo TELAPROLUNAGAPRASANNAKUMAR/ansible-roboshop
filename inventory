@@ -14,3 +14,5 @@ user.joindevops.art
 mysql.joindevops.art
 [shipping]
 shipping.joindevops.art
+[rabbitmq]
+rabbitmq.joindevops.art
