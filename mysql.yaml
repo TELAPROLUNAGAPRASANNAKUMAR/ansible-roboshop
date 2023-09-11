@@ -1,0 +1,17 @@
+- name: install mysql
+  hosts: mysql
+  become: yes
+  tasks:
+  - name: disable avilale version
+    ansible.builtin.command: yum module disable mysql -y 
+
+  - name: copy mysql repo
+    ansible.builtin.copy:
+      src: mysql.repo
+      dest: /etc/yum.repos.d/mysql.repo
+
+  - name: install mysql server
+    ansible.builtin.yum:
+      name: mysql-community-server
+      state: installed
+      
